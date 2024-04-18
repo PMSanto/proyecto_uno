@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="hola">
+    <meta name="keywords" content="inmobiliaria">
+    <meta name="author" content="Nahuel">
+    <!-- bootstrap -->
+    <script defer src="../js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <link
+    rel="shortcut icon"
+    href="https://icones.pro/wp-content/uploads/2021/02/icone-de-la-maison-orange.png"
+    type="image/png"
+  />
+    <!-- estilos propios -->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+  
+    <script src="https://kit.fontawesome.com/a253e5d80f.js" crossorigin="anonymous"></script>
+    <title>Contacto</title>
+</head>
+
+<body >
+  <!-- NAVBAR -->
+  <header class="navbar fixed-top navbar-expand-lg bg-primary navbar-dark">
+    <article class="container">
+      <a class="navbar-brand title" href="../index.html"
+        >Mobi<span class="color-title">Web</span></a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbar-principal"
+        aria-controls="navbar-principal"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav
+        class="collapse navbar-collapse justify-content-end text-center"
+        id="navbar-principal"
+      >
+        <div class="navbar-nav text-white">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="./Anuncios.html"
+            >Ver anuncios</a
+          >
+          <a class="nav-link active" href="../index.html">Inicio</a>
+          <a class="nav-link active" href="./pages/contacto.html">Contacto</a>
+          <a class="nav-link active" href="./Nosotros.html">Nosotros</a>
+          <a
+            class="nav-link btn btn-outline-secondary rounded-pill boton-login"
+            href="./login.html"
+            >Iniciar sesion</a
+          >
+        </div>
+      </nav>
+    </article>
+  </header>
+  <!-- formulario -->
+    <main>
+      <section class="container">
+        <div>
+          <h4>Servicio al cliente</h4>
+          <hr>
+          <h4>Contactenos: </h4>
+          <p>Lo invitamos a dejarnos sus datos y nos contactaremos con usted a la brevedad.</p>
+          <hr>
+        </div>
+
+        <!-- Formularioo -->
+        <section class="formulario">
+          <form class="row g-3 d-flex flex-column p-2">
+
+            <div class="mb-3 col-sm-12 col-md-10 col-lg-4">
+              <label for="validationNombre" class="form-label"><i class="fa-solid fa-user-large me-1"></i> Nombre y Apellido</label>
+              <input type="text" class="form-control" id="validationNombre" placeholder="Escribe tu nombre y apellido" required>
+            </div>
+            <div class="mb-3 col-sm-12 col-md-10 col-lg-4">
+              <label for="validationEmail" class="form-label"><i class="fa-solid fa-envelope me-2"></i> Email</label>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                <input type="email" class="form-control" id="validationEmail" aria-describedby="inputGroupPrepend2"  placeholder="Escribe tu email" required>
+              </div>
+            </div>
+            <div class="mb-3 col-sm-12 col-md-10 col-lg-4">
+              <label for="validationTelefono" class="mb-2"><i class="fa-solid fa-mobile-screen-button me-2"></i> Teléfono </label>
+              <input type="tel" class="form-control" id="phone" placeholder="Su Teléfono" 
+              name="phone" pattern="(\+34|0034|34)?[ -]*(6|7)[ -]*([0-9][ -]*){8}" maxlength="10">
+            </div>
+            <div class="mb-3 col-md-auto">
+              <label for="validationMensaje" class="form-label d-flex"><i class="fa-solid fa-comments me-2"></i> Consulta</label>
+              <textarea name="mensaje" id="validationMensaje" cols="30" rows="10"></textarea>
+            </div>
+            <div class="col-12 col-sm-12 col-md-10 col-lg-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  He leído y acepto la <span class="politicaPrivacidad">
+                    Política de Privacidad
+                  </span>
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-secondary btnEnviar" type="submit">Enviar</button>
+            </div>
+
+            <!-- maps -->
+            <article class="mb-4">
+              <hr>
+              <h4>Ubicación</h4>
+              <article class="mapouter"><article class="gmap_canvas mt-4"><iframe width="565" height="336" id="gmap_canvas" src="https://maps.google.com/maps?q=general+paz+576&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></article></article>
+              <article>
+                <article>
+                  <i class="fa-solid fa-location-dot mt-4  p-2" id="ubi"></i>
+                  <span class="p-2 ">Gral. Paz 576, T4000 San Miguel de Tucumán, Tucumán</span>
+                </article>
+                <article>
+                  <i class="fa-solid fa-phone mt-4 p-2 " id="tel"></i>
+                  <span class="p-2">381 578-3030</span>
+                </article>
+              </article>
+            </article>   
+          </form>
+
+        </section>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="py-3 bg-primary text-secondary color_footer">
+      
+      <section class="container w-100 py-4">
+        
+        <a
+          class="navbar-brand text-light navbar_brand text-center"
+          href="../index.html">
+        </a>
+
+        <div class="row">
+          <article class="col-sm-12 col-md-3 mt-3 text-center">
+            <h3 class="title text-light pb-2 fs-4"> MobiWeb ®         
+            </h3>
+
+            <img
+              src="../acces/logo.jpg"
+              alt="lOGOMOBIWEB"
+              class="w-75 border rounded-5"
+            />
+            <article class="pt-2">
+              <h6>Seguinos en</h6>
+              
+
+              <i class="fa-brands fa-facebook fa-beat"></i>
+              
+              <i class="fa-brands fa-square-x-twitter fa-bounce"></i>
+              
+              <i class="fa-brands fa-square-instagram fa-beat-fade"></i>
+
+            </article>
+          
+          
+          </article>
+          
+          <article class="col-sm-12 col-md-6 mt-3 text-center">
+            
+            <h5 class="text-secondary mb-2 pb-2 text-light">
+              
+              Enlaces
+            </h5>
+            <a
+              href="/pages/login.html"
+              class="nav-link my-1 fs-6 fw-light"
+              >Login</a
+            >
+            <a
+              href="./Anuncios.html"
+              class="nav-link my-1 fs-6 fw-light"
+              >Promociones/Anuncios</a
+            >
+            <a
+              href="./contacto.html"
+              class="nav-link my-1 fs-6 fw-light "
+              >Contacto</a
+            >
+            <a
+              href="./Nosotros.html"
+              class="nav-link my-1 fs-6 fw-light"
+              >Sobre nosotros</a
+            >
+
+            <a
+              href="error404.html"
+              class="nav-link fs-6 fw-light"
+              >Trabaja con nosotros</a
+            >
+          </article>
+          </article>
+          
+          
+          <article class="col-sm-12 col-md-3 mt-4 text-center">
+            
+            <h5 class="text-secondary mb-2 pb-2 text-light">
+              
+              Terminos y Condiciones
+            </h5>
+
+            <a href="..//pages/error404.html" class="nav-link my-1 fs-6 fw-light"
+              >Politicas de Privacidad
+            </a>
+            <a href="..//pages/error404.html" class="nav-link my-1 fs-6 fw-light"
+              >Politicas de Cookies</a
+            >
+            <a href="..//pages/error404.html" class="nav-link my-1 fs-6 fw-light"
+            >Seguridad
+          </a>
+          <a href="..//pages/error404.html" class="nav-link my-1 fs-6 fw-light"
+          >Ayuda
+          </a>
+            <br />
+          </article>
+        </div>
+      </section>
+      <div class="d-flex flex-column align-items-center text-light bg-primary fw-light fs-6 py-0">
+        <p class="mt-2 mb-2">
+  
+          Mobiweb &copy; 2024 | Todos los derechos reservados ®</p>
+      </div>
+    </footer> 
+
+</body>
+</html>

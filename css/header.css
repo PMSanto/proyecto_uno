@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+body {
+  background-color: #a9bed9;
+}
+
+header {
+  font-family: Roboto Slab, sans-serif !important;
+  & .title {
+    font-weight: 500;
+    transition: ease-in-out all 0.2s;
+
+    &:hover {
+      scale: 1.4;
+    }
+  }
+
+  & .nav-link {
+    transition: ease-in-out all 0.2s;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+
+  .color-title {
+    color: #a9bed9;
+    font-weight: 600;
+  }
+
+}
+
+.bg-primary {
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.boton-login {
+  background-color: #337ab8;
+  color: #ffffffff;
+  border-radius: 0.6rem;
+  padding: 0.5rem;
+}
+
+/* ==== para link iniciar sesion ===== */
+
+@media (max-width: 991px) {
+  .boton-login {
+    display: block;
+    margin: 0 auto; /* Esto centra horizontalmente el botón */
+    text-align: center; /* Esto centra el texto del botón */
+  }
+}
+

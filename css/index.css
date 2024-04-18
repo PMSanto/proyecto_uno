@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+body {
+  background-color: #a9bed9;
+  font-family: Roboto Slab, sans-serif !important;
+}
+
+header {
+  font-family: Roboto Slab, sans-serif !important;
+  & .title {
+    font-weight: 500;
+    transition: ease-in-out all 0.2s;
+
+    &:hover {
+      scale: 1.2;
+    }
+  }
+
+  & .nav-link {
+    transition: ease-in-out all 0.2s;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}
+
+.color-title {
+  color: #a9bed9;
+  font-weight: 600;
+}
+
+.bg-primary {
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  );
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); 
+}
+
+.boton-login {
+  background-color: #337ab8;
+  color: #ffffffff;
+  border-radius: 0.6rem;
+  padding: 0.5rem;
+}
+
+/* ====== CAROUSELl ======== */
+
+#carouselMobiWeb {
+  & .carousel-inner img {
+    max-height: 80vh;
+    object-fit: cover;
+    filter: grayscale(60%);
+  }
+
+  & .title-carousel {
+    font-family: Roboto Slab, sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+  }
+
+  & .text-carousel {
+    font-family: Roboto Slab, sans-serif;
+    color: #141e30;
+    font-size: 20px;
+  }
+
+  & .text-carousel-2 {
+    font-family: Roboto Slab, sans-serif;
+    color: white;
+    font-size: 20px;
+  }
+}
+
+.boton-carousel {
+  background-color: #337ab8;
+  color: #ffffffff;
+  border-radius: 0.6rem;
+  padding: 0.5rem;
+}
+
+/* .card-body{
+  min-height: 220px;
+} */
+
+.boton-card{
+  background-color: #337ab8;
+  color: white;
+}
+.color-form {
+  font-weight: 600;
+  color: #337ab8;
+}
+
+.boton-form{
+  background-color: #337ab8;
+  color: wheat;
+}
+
+#comentarios{
+  background-color: white;
+}
+
+/* ==== para link iniciar sesion ===== */
+
+@media (max-width: 991px) {
+  .boton-login {
+    display: block;
+    margin: 0 auto; /* Esto centra horizontalmente el botón */
+    text-align: center; /* Esto centra el texto del botón */
+  }
+}
+
+@media (max-width: 991px) {
+  .boton-carousel {
+    display: block;
+    margin: 0 auto;
+    text-align: center; 
+  }
+}
+
+/* ==== para boton carousel ==== */
+@media (max-width: 992px) {
+  .boton-carousel {
+    max-width: 120px;
+  }
+}

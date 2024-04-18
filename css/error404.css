@@ -1,0 +1,17 @@
+
+
+
+
+main{
+    margin-top: 50px;
+
+    & .error404{
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    & .btn-secondary{
+        background: #141E30;
+    }
+}

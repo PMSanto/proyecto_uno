@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+body {
+  background-color: #a9bed9;
+}
+
+header {
+  font-family: Roboto Slab, sans-serif !important;
+  & .title {
+    font-weight: 500;
+    transition: ease-in-out all 0.2s;
+
+    &:hover {
+      scale: 1.2;
+    }
+  }
+
+  & .nav-link {
+    transition: ease-in-out all 0.2s;
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}
+
+.color-title {
+  color: #a9bed9;
+  font-weight: 600;
+}
+
+.bg-primary {
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.boton-login {
+  background-color: #337ab8;
+  color: #ffffffff;
+  border-radius: 0.6rem;
+  padding: 0.5rem;
+  
+}
+
+/* ====== formulario inicio de sesion ======== */
+
+main {
+  & .title-login {
+    margin-top: 100px;
+    font-family: Roboto Slab, sans-serif !important;
+    font-size: 60px;
+  }
+  & .boton-facebook {
+    background-color: white;
+  }
+
+  & .boton-google {
+    background-color: white;
+  }
+}
+
+.botonLogin {
+  background-color: gainsboro;
+}
+
+.correoElectronico {
+  color: black;
+  font-size: 18px;
+}
+
+.contraseña {
+  color: black;
+  font-size: 18px;
+}
+
+.usuarioYcontraseña {
+  color: black;
+  font-size: 18px;
+}
+
+.btn-primary {
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.imagen-login {
+  margin-top: 40px;
+  padding: 0 5%;
+  width: 650px;
+  height: 480px;
+  object-fit: cover;
+}
+
+/* ==== para link iniciar sesion ===== */
+
+@media (max-width: 991px) {
+  .boton-login {
+    display: block;
+    margin: 0 auto; /* Esto centra horizontalmente el botón */
+    text-align: center; /* Esto centra el texto del botón */
+  }
+}

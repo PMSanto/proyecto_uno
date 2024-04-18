@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+body{
+    background-color: #a9bed9;
+}
+
+.boton-login {
+    background-color: #337ab8;
+    color: #ffffffff;
+    border-radius: 0.6rem;
+    padding: 0.5rem;
+  }
+
+main{
+    margin-top: 90px;
+    font-family: Roboto Slab, sans-serif !important;
+
+    & hr{
+        border: 2px solid #141E30;
+    }    
+
+    & .politicaPrivacidad{
+        color: #064894;
+    }
+
+    & .btnEnviar{
+        background: #141E30;
+    }
+
+    & #ubi, #tel{
+        border: 3px solid #141E30;
+        border-radius: 50%;
+    }
+
+    & #validationMensaje{
+        width: 50%;
+    }
+
+    & .preguntas{
+        display: grid;
+    }
+}
+
+
+@media (width <= 770px){
+    #gmap_canvas{
+        width: 100%;
+        height: 300px;
+    }
+
+    
+}
+
+/* ==== para link iniciar sesion ===== */
+
+@media (max-width: 991px) {
+    .boton-login {
+      display: block;
+      margin: 0 auto; /* Esto centra horizontalmente el botón */
+      text-align: center; /* Esto centra el texto del botón */
+    }
+  }
